@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prison escape/MainScene.unity
     guid: 8d31f11432f2145e4bdf610735357be6
+  - enabled: 1
+    path: Assets/Prison escape/CharacterSelect.unity
+    guid: 66f20a13e31ba4abc8a953a2dbd8d112
   m_configObjects: {}
