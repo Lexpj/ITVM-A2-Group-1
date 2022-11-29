@@ -9,7 +9,9 @@
                 <ui:Label text="Prisoners escaped 0/4" display-tooltip-when-elided="true" name="PrisonCounter" style="font-size: 15%; color: rgb(224, 197, 216); -unity-font-style: bold; -unity-text-align: middle-center;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement style="height: 100%; width: 40%;" />
+        <ui:VisualElement style="height: 100%; width: 40%;">
+            <ui:Label text="0:00" display-tooltip-when-elided="true" name="clock" style="-unity-text-align: middle-center; width: 100%; height: 40%; margin-top: 7%; margin-left: 0; margin-right: 0; margin-bottom: 0; font-size: 40%; color: rgba(255, 255, 255, 255);" />
+        </ui:VisualElement>
         <ui:VisualElement style="height: 100%; width: 30%;" />
     </ui:VisualElement>
     <ui:VisualElement style="height: 75%; width: 100%;" />

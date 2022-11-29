@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Prison escape/Scenes/SampleScene.unity
+    path: Assets/Prison escape/Scenes/PrisonScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Prison escape/Scenes/EndScene.unity
+    guid: c239cb04c2d9a5d40bbfe347d75d2aba
   m_configObjects: {}
