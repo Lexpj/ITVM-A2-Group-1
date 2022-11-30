@@ -8,7 +8,10 @@ public class Task : MonoBehaviour
     private float counter = 0f;
     private bool taskCompleted = false;
     private bool atTask = false;
+    private bool disableIcon = false;
     private taskManager targetObj;
+    public GameObject T_key;
+    public GameObject exclamation;
 
     private void Start()
     {
@@ -19,31 +22,48 @@ public class Task : MonoBehaviour
     {
         if (!taskCompleted)
         {
-            if (atTask)
-            {
-                counter += Time.deltaTime;
-            }
+           // if (atTask)
+            //{
+           //     counter += Time.deltaTime;
+           // }
 
-            if (!atTask)
-            {
-                counter = 0f;
-            }
+           // if (!atTask)
+           // {
+           //     counter = 0f;
+           // }
 
-            if (counter >= secondsToCompleteTask)
+           // if (counter >= secondsToCompleteTask)
+           // {
+           //     targetObj.TaskCompleted();              
+           //     taskCompleted = true;
+           //     T_key.SetActive(false);
+           // }
+            if (Input.GetKey(KeyCode.T) && atTask)
             {
-                targetObj.TaskCompleted();              
                 taskCompleted = true;
+                targetObj.TaskCompleted();
+                T_key.SetActive(false);
             }
+        }
+        if (taskCompleted && !disableIcon)
+        {
+            exclamation.SetActive(false);
+            disableIcon = true;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         atTask = true;
+        if (!taskCompleted)
+        {
+            T_key.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         atTask = false;
+        T_key.SetActive(false);
     }
 }

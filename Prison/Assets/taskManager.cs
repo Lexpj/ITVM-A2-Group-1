@@ -6,12 +6,13 @@ using UnityEngine.UIElements;
 public class taskManager : MonoBehaviour
 {
     public int totalTasks = 0;
-    public int prevTotalTasks = 0;
-    public int completedTasks = 0;
+    private int prevTotalTasks = 0;
+    private int completedTasks = 0;
     private int prevCompletedTasks = 0;
     private bool endTaskEnabled = false;
     private Label taskLabel;
     public GameObject lastTask;
+    public GameObject endPoint;
 
     void OnEnable()
     {
@@ -41,6 +42,11 @@ public class taskManager : MonoBehaviour
             totalTasks++;
             lastTask.SetActive(true);
             endTaskEnabled = true;
+        }
+
+        if(totalTasks == completedTasks && endTaskEnabled)
+        {
+            endPoint.SetActive(true);
         }
     }
 

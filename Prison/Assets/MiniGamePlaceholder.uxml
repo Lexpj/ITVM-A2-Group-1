@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="width: 100%; height: 100%; align-items: center; justify-content: center;">
+        <ui:Label text="This is a placeholder for a minigame" display-tooltip-when-elided="true" style="color: rgba(255, 255, 255, 255); font-size: 30%; -unity-font-style: bold; margin-top: 0; margin-bottom: 5%;" />
+        <ui:Button text="Complete" display-tooltip-when-elided="true" style="width: 25%; height: 6%; -unity-font-style: bold; color: rgba(255, 255, 255, 255); background-color: rgba(183, 59, 67, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

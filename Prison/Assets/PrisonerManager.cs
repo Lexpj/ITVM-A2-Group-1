@@ -13,7 +13,7 @@ public class PrisonerManager : MonoBehaviour
     private Label prisonLabel;
     private Label clockLabel;
     private float currentTime = 0f;
-    private float startingTime = 31f;
+    private float startingTime = 301f;
 
     void OnEnable()
     {
