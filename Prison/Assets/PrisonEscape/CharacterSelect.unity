@@ -405,7 +405,7 @@ MonoBehaviour:
   characters:
   - {fileID: 161560108}
   - {fileID: 1668979005}
-  firstlevel: Game
+  firstlevel: PrisonScene
   closePlayerSelect: MainScene
   myAudio: {fileID: 1285248830}
 --- !u!224 &371520691 stripped
