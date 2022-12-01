@@ -12,6 +12,7 @@ public class Task : MonoBehaviour
     private taskManager targetObj;
     public GameObject T_key;
     public GameObject exclamation;
+    public GameObject taskIcon;
 
     private void Start()
     {
@@ -48,6 +49,7 @@ public class Task : MonoBehaviour
         if (taskCompleted && !disableIcon)
         {
             exclamation.SetActive(false);
+            taskIcon.SetActive(false);
             disableIcon = true;
         }
     }
