@@ -6,6 +6,8 @@ TagManager:
   tags:
   - TaskManager
   - PrisonerManager
+  - Task
+  - PrisonerAI
   layers:
   - Default
   - TransparentFX

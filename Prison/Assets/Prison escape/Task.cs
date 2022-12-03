@@ -6,13 +6,15 @@ public class Task : MonoBehaviour
 {
     private float secondsToCompleteTask = 2f;
     private float counter = 0f;
-    private bool taskCompleted = false;
+    public bool taskCompleted = false;
     private bool atTask = false;
     private bool disableIcon = false;
     private taskManager targetObj;
     public GameObject T_key;
     public GameObject exclamation;
     public GameObject taskIcon;
+    private bool player = false;
+    private bool prisonerAI = false;
 
     private void Start()
     {
@@ -23,27 +25,33 @@ public class Task : MonoBehaviour
     {
         if (!taskCompleted)
         {
-           // if (atTask)
-            //{
-           //     counter += Time.deltaTime;
-           // }
-
-           // if (!atTask)
-           // {
-           //     counter = 0f;
-           // }
-
-           // if (counter >= secondsToCompleteTask)
-           // {
-           //     targetObj.TaskCompleted();              
-           //     taskCompleted = true;
-           //     T_key.SetActive(false);
-           // }
-            if (Input.GetKey(KeyCode.T) && atTask)
+            if (prisonerAI)
             {
-                taskCompleted = true;
-                targetObj.TaskCompleted();
-                T_key.SetActive(false);
+                if (atTask)
+                {
+                     counter += Time.deltaTime;
+                }
+
+                if (!atTask)
+                {
+                    counter = 0f;
+                }
+
+                if (counter >= secondsToCompleteTask)
+                {
+                    targetObj.TaskCompleted();              
+                    taskCompleted = true;
+                    T_key.SetActive(false);
+                }
+            }
+            if (player)
+            {
+                if (Input.GetKey(KeyCode.T) && atTask)
+                {
+                    taskCompleted = true;
+                    targetObj.TaskCompleted();
+                    T_key.SetActive(false);
+                }
             }
         }
         if (taskCompleted && !disableIcon)
@@ -57,7 +65,19 @@ public class Task : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         atTask = true;
-        if (!taskCompleted)
+
+        if (other.CompareTag("Player"))
+        {
+            player = true;
+            prisonerAI = false;
+        }
+        else if (other.CompareTag("PrisonerAI"))
+        {
+            player = false;
+            prisonerAI = true;
+        }
+
+        if (!taskCompleted && player)
         {
             T_key.SetActive(true);
         }
