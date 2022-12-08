@@ -39,7 +39,6 @@ public class TurnDial : MonoBehaviour
     // For the task settings
     public Task task;
 
-
     void Awake() {
         _cam = Camera.main;
         randint1 = Random.Range(0,36);
@@ -66,6 +65,10 @@ public class TurnDial : MonoBehaviour
         audioSource.clip = click;
         audioSource.pitch = startPitch;
         speed = initialSpeed;
+
+        nr1.gameObject.GetComponent<Animator>().enabled = true;
+        nr2.gameObject.GetComponent<Animator>().enabled = false;
+        nr3.gameObject.GetComponent<Animator>().enabled = false;
     }
 
     // Update is called once per frame
@@ -111,6 +114,10 @@ public class TurnDial : MonoBehaviour
         nr2.color = new Color(255,0,0,255);
         nr3.color = new Color(255,0,0,255);
         
+        // Animatino
+        nr1.gameObject.GetComponent<Animator>().enabled = true;
+        nr2.gameObject.GetComponent<Animator>().enabled = false;
+        nr3.gameObject.GetComponent<Animator>().enabled = false;
 
         //UnityEditor.EditorApplication.isPlaying = false;
     }
@@ -133,6 +140,8 @@ public class TurnDial : MonoBehaviour
             if (dif <= margin) {
                 nr1.color = new Color(0,255,0,255);
                 nr2.color = new Color(255,255,0,255);
+                nr1.gameObject.GetComponent<Animator>().enabled = false;
+                nr2.gameObject.GetComponent<Animator>().enabled = true;
             } else {
                 GameOver();
             }
@@ -145,6 +154,8 @@ public class TurnDial : MonoBehaviour
             if (dif <= margin) {
                 nr2.color = new Color(0,255,0,255);
                 nr3.color = new Color(255,255,0,255);
+                nr2.gameObject.GetComponent<Animator>().enabled = false;
+                nr3.gameObject.GetComponent<Animator>().enabled = true;
             } else {
                 GameOver();
             }
@@ -156,6 +167,7 @@ public class TurnDial : MonoBehaviour
             }
             if (dif <= margin) {
                 nr3.color = new Color(0,255,0,255);
+                nr3.gameObject.GetComponent<Animator>().enabled = false;
                 Win();
             } else {
                 GameOver();
