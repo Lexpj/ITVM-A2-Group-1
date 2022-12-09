@@ -9,10 +9,11 @@ public class taskManager : MonoBehaviour
     private int prevTotalTasks = 0;
     private int completedTasks = 0;
     private int prevCompletedTasks = 0;
-    private bool endTaskEnabled = false;
+    public bool endTaskEnabled = false;
     private Label taskLabel;
     public GameObject lastTask;
     public GameObject endPoint;
+    public bool allTasksCompleted;
 
     void OnEnable()
     {
@@ -47,6 +48,7 @@ public class taskManager : MonoBehaviour
         if(totalTasks == completedTasks && endTaskEnabled)
         {
             endPoint.SetActive(true);
+            allTasksCompleted = true;
         }
     }
 

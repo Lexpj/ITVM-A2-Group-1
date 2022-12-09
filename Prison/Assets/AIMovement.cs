@@ -6,13 +6,12 @@ using UnityEngine.AI;
 public class AIMovement : MonoBehaviour
 {
     private GameObject[] tasks;
-    public int tasksToBeCompleted = 4;
+    public taskManager taskManager;
+    public GameObject endPoint;
     private bool completeTasks = false;
     private bool fleeing = false;
     private bool escaping = false;
     private int currentTask = 0;
-    private int completedTasks = 0;
-
     private bool onWayToTask = false;
 
     private NavMeshAgent agent;
@@ -29,14 +28,23 @@ public class AIMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!onWayToTask)
+        if (taskManager.allTasksCompleted)
+        {
+            agent.SetDestination(endPoint.transform.position);
+            escaping = true;
+        }
+        if (!onWayToTask && !escaping)
         {
             ChooseTask();
         }
         CheckIfCurrentTaskCompleted();
-        if(completedTasks == tasksToBeCompleted)
+        if(taskManager.endTaskEnabled)
         {
             tasks = GameObject.FindGameObjectsWithTag("Task");
+        }
+        if (taskManager.allTasksCompleted)
+        {
+            agent.SetDestination(endPoint.transform.position);
         }
     }
 
@@ -57,7 +65,6 @@ public class AIMovement : MonoBehaviour
             if (!tasks[i].GetComponent<Task>().taskCompleted)
             {
                 taskDistance = Vector3.Distance(transform.position, tasks[i].transform.position);
-                Debug.Log(taskDistance);
                 if (taskDistance < distance)
                 {
                     distance = taskDistance;
@@ -77,7 +84,6 @@ public class AIMovement : MonoBehaviour
     {
         if (tasks[currentTask].GetComponent<Task>().taskCompleted)
         {
-            completedTasks++;
             onWayToTask = false;
         }
     }

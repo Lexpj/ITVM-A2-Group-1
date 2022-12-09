@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Task : MonoBehaviour
 {
-    private float secondsToCompleteTask = 2f;
+    private float secondsToCompleteTask = 10f;
     private float counter = 0f;
     public bool taskCompleted = false;
     private bool atTask = false;
@@ -41,7 +41,7 @@ public class Task : MonoBehaviour
                 {
                     targetObj.TaskCompleted();              
                     taskCompleted = true;
-                    T_key.SetActive(false);
+                    prisonerAI = false;
                 }
             }
             if (player)
@@ -51,6 +51,7 @@ public class Task : MonoBehaviour
                     taskCompleted = true;
                     targetObj.TaskCompleted();
                     T_key.SetActive(false);
+                    player = false;
                 }
             }
         }

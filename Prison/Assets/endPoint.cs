@@ -9,6 +9,9 @@ public class endPoint : MonoBehaviour
         if(other.gameObject.GetComponent<reachEndPoint>() != null)
         {
             other.gameObject.GetComponent<reachEndPoint>().PrisonerEscaped();
+            if (other.CompareTag("PrisonerAI")){
+                other.gameObject.SetActive(false);
+            }
         }
     }
 }
