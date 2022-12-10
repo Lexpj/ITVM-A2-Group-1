@@ -56289,9 +56289,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinigameCircles
       objectReference: {fileID: 0}
+    - target: {fileID: 6538669694062730487, guid: 77a27c90a1e46ed4f812c08e2df9cfa1, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6538669694573070759, guid: 77a27c90a1e46ed4f812c08e2df9cfa1, type: 3}
       propertyPath: task
       value: 
       objectReference: {fileID: 1011846862}
+    - target: {fileID: 6538669694573070759, guid: 77a27c90a1e46ed4f812c08e2df9cfa1, type: 3}
+      propertyPath: maxPeriod
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538669694573070759, guid: 77a27c90a1e46ed4f812c08e2df9cfa1, type: 3}
+      propertyPath: minPeriod
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77a27c90a1e46ed4f812c08e2df9cfa1, type: 3}

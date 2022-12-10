@@ -41,7 +41,10 @@ public class CircleGame : MonoBehaviour
 
     // Time
     private float nextActionTime;
-    public float period = 0.1f;
+    public float minPeriod = 0.4f;
+    public float maxPeriod = 1f;
+    private float increment;
+    private float period;
 
     // game vars
     private int cur = 0;
@@ -62,10 +65,14 @@ public class CircleGame : MonoBehaviour
         clicked = new int[] {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
         cur = 0;
         curpointer = 0;
+        increment = ((maxPeriod-minPeriod)/25);
+        period = maxPeriod;
+
         clickDetected = false;
         firstClick = false;
         startTime = Time.time;
         nextActionTime = 0.0f;
+        
         objects = new GameObject[] {circle1,circle2,circle3,circle4,circle5,circle6,circle7,circle8,circle9,circle10,circle11,circle12,circle13,circle14,circle15,circle16,circle17,circle18,circle19,circle20,circle21,circle22,circle23,circle24,circle25};
         for (int i = 0; i < 25; i++) {
             objects[i].GetComponent<DetectClick>().setPos(i);
@@ -127,6 +134,7 @@ public class CircleGame : MonoBehaviour
         if (firstClick) {
             if (Time.time-startTime > nextActionTime) {
                 nextActionTime += period;
+                period -= increment;
                 changeNext();
             }
         }
