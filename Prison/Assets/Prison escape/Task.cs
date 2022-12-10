@@ -21,6 +21,9 @@ public class Task : MonoBehaviour
     private GameObject player;
 
     public static bool isMinigameOpen = false;
+
+    public bool isClickable = false;
+
     [SerializeField] GameObject minigame;
 
     private void Start()
@@ -54,10 +57,16 @@ public class Task : MonoBehaviour
             if (Input.GetKey(KeyCode.T) && atTask)
             {
                 T_key.SetActive(false);
-               
+
                 minigame.SetActive(true);
                 isMinigameOpen = true;
-                minigame.transform.position = player.transform.position;
+
+                if (!isClickable) {
+                    minigame.transform.position = player.transform.position;
+                } else {
+                    minigame.transform.position = new Vector3(player.transform.position.x,player.transform.position.y,-2);
+                }
+
                 
             }
         }
