@@ -26,7 +26,6 @@ public class Tile
         stubleft = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/StubLeft");
         tleft = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/TLeft");
         vertical = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/Vertical");
-        Debug.Log(cross);
     }
     public void init() {
         orientation = 0;
