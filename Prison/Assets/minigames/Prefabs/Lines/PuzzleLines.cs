@@ -19,17 +19,20 @@ public class Tile
     public void setPos(int x) {
         pos = x;
     }
+    public void initObjects() {
+        cross = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/Cross");
+        cornerleftdown = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/CornerLeftDown");
+        empty = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/Empty");
+        stubleft = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/StubLeft");
+        tleft = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/TLeft");
+        vertical = GameObject.Find("TileObject ("+pos+")/Tile ("+pos+")/Vertical");
+        Debug.Log(cross);
+    }
     public void init() {
         orientation = 0;
         lines = new int[] {0,0,0,0};
     }
     public void calcStart() {
-        cross = GameObject.Find("Cross");
-        cornerleftdown = GameObject.Find("CornerLeftDown");
-        empty = GameObject.Find("Empty");
-        stubleft = GameObject.Find("StubLeft");
-        tleft = GameObject.Find("TLeft");
-        vertical = GameObject.Find("Vertical");
         cross.SetActive(false);
         empty.SetActive(false);
         stubleft.SetActive(false);
@@ -199,8 +202,20 @@ public class PuzzleLines : MonoBehaviour
         init();
     }
     private void init() {
+        // New tiles 
+        for (int i = 0; i < tiles.GetLength(0); i++) {
+            for (int j = 0; j < tiles.GetLength(1); j++) {
+                tiles[i,j] = new Tile();
+                tiles[i,j].setPos(j + i*3);
+                tiles[i,j].initObjects();
+            }
+        }   
+        makePuzzle();
+    }
+    void makePuzzle() {
+        // Generate puzzle
+        // Horizontal lines
         float configChance;
-
         firstClick = false;
         startTime = Time.time;
         tickTimePeriod = 0.5f;
@@ -210,18 +225,11 @@ public class PuzzleLines : MonoBehaviour
         secondIncrease = false;
         secondIncreaseTime = maxTime / 3;
         clicked = false;
-
-        // New tiles 
         for (int i = 0; i < tiles.GetLength(0); i++) {
             for (int j = 0; j < tiles.GetLength(1); j++) {
-                tiles[i,j] = new Tile();
-                tiles[i,j].setPos(j + i*3);
-                tiles[i,j].init();
+                tiles[i,j].init(); // reset lines and orientation
             }
         }   
-
-        // Generate puzzle
-        // Horizontal lines
         for (int i = 0; i < tiles.GetLength(0); i++) {
             for (int j = 0; j < tiles.GetLength(1)-1; j++) {
                 configChance = Random.Range(0f,1f);
@@ -292,8 +300,8 @@ public class PuzzleLines : MonoBehaviour
     }
 
     void Failed() {
+        makePuzzle();
         task.Failed();
-        init();
     }
 
     void Win() {
@@ -334,7 +342,7 @@ public class PuzzleLines : MonoBehaviour
         }
 
         bool won = checkState();
-        if (won) {
+        if (won && firstClick) {
            Win();
         }
 

@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 3603698575053436020}
   - component: {fileID: 3603698575053436021}
   m_Layer: 0
-  m_Name: Tile
+  m_Name: Tile (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -751,6 +751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69f3c5f8a33b46a40bb3c86d8f8724c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  ticker: {fileID: 0}
   rotationSound: {fileID: 8300000, guid: a6b5f711da351e94eb009d57c4ef8cfc, type: 3}
   win: {fileID: 8300000, guid: 12eec5afa20988f43ad4779d193c99c7, type: 3}
   tickSound: {fileID: 8300000, guid: 85dd5b519a80a004ca96558ea71aa371, type: 3}
@@ -760,6 +762,7 @@ MonoBehaviour:
   clicked: 0
   clickedPos: 0
   maxTime: 10
+  task: {fileID: 0}
 --- !u!1 &3603698575664567676
 GameObject:
   m_ObjectHideFlags: 0
