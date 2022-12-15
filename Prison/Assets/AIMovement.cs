@@ -5,14 +5,18 @@ using UnityEngine.AI;
 
 public class AIMovement : MonoBehaviour
 {
+    private GameObject[] prisonerAIs;
     private GameObject[] tasks;
     public taskManager taskManager;
     public GameObject endPoint;
-    private bool completeTasks = false;
     private bool fleeing = false;
-    private bool escaping = false;
-    private int currentTask = 0;
-    private bool onWayToTask = false;
+    private float knockedCounter = 0f;
+    private string state = "";
+    public int currentTask = -1;
+    public bool onWayToTask = false;
+    [SerializeField] private GameObject particles;
+    [SerializeField] private Health health;
+
 
     private NavMeshAgent agent;
     // Start is called before the first frame update
@@ -23,17 +27,14 @@ public class AIMovement : MonoBehaviour
         agent.updateUpAxis = false;
 
         tasks = GameObject.FindGameObjectsWithTag("Task");
+        prisonerAIs = GameObject.FindGameObjectsWithTag("PrisonerAI");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (taskManager.allTasksCompleted)
-        {
-            agent.SetDestination(endPoint.transform.position);
-            escaping = true;
-        }
-        if (!onWayToTask && !escaping)
+        setState();
+        if (!onWayToTask && state == "Tasks")
         {
             ChooseTask();
         }
@@ -42,15 +43,27 @@ public class AIMovement : MonoBehaviour
         {
             tasks = GameObject.FindGameObjectsWithTag("Task");
         }
-        if (taskManager.allTasksCompleted)
-        {
-            agent.SetDestination(endPoint.transform.position);
-        }
     }
 
     void setState()
     {
-        completeTasks = true;
+        if(health.GetHealthState() == "Knocked")
+        {
+            state = "Knocked";
+            agent.SetDestination(this.transform.position);
+            particles.SetActive(true);
+        }
+        else if (taskManager.allTasksCompleted)
+        {
+            agent.SetDestination(endPoint.transform.position);
+            state = "Escaping";
+            particles.SetActive(false);
+        }
+        else
+        {
+            state = "Tasks";
+            particles.SetActive(false);
+        }
     }
     
     void ChooseTask()
@@ -59,18 +72,31 @@ public class AIMovement : MonoBehaviour
         float taskDistance = 0;
         int bestTask = 0;
         int tasksToBeCompleted = 0;
+        bool taskAlreadyExecuted = false;
 
         for (int i = 0; i < tasks.Length; i++)
         {
             if (!tasks[i].GetComponent<Task>().taskCompleted)
             {
-                taskDistance = Vector3.Distance(transform.position, tasks[i].transform.position);
-                if (taskDistance < distance)
+                foreach(GameObject prisoner in prisonerAIs)
                 {
-                    distance = taskDistance;
-                    bestTask = i;
+                    if(prisoner.GetComponent<AIMovement>().currentTask == i && prisoner.GetComponent<AIMovement>().onWayToTask)
+                    {
+                        taskAlreadyExecuted = true;
+                    }
+                }
+
+                if (!taskAlreadyExecuted)
+                {
+                    taskDistance = Vector3.Distance(transform.position, tasks[i].transform.position);
+                    if (taskDistance < distance)
+                    {
+                        distance = taskDistance;
+                        bestTask = i;
+                    }
                 }
             }
+            taskAlreadyExecuted = false;
         }
 
         currentTask = bestTask;
@@ -82,9 +108,12 @@ public class AIMovement : MonoBehaviour
 
     void CheckIfCurrentTaskCompleted()
     {
-        if (tasks[currentTask].GetComponent<Task>().taskCompleted)
+        if(currentTask != -1)
         {
-            onWayToTask = false;
+            if (tasks[currentTask].GetComponent<Task>().taskCompleted)
+            {
+                onWayToTask = false;
+            }
         }
     }
 }

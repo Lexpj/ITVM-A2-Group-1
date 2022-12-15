@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/rache/OneDrive/Documenten/Video game making/ITVM-A2-Group-1/Prison/WebGL;C:/Users/rache/OneDrive/Documenten/Video game making/ITVM-A2-Group-1/Prison/WebGL Builds;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/rache/OneDrive/Documenten/Video game making/ITVM-A2-Group-1/Prison/WebGL/New_Build;C:/Users/rache/OneDrive/Documenten/Video game making/ITVM-A2-Group-1/Prison/WebGL;C:/Users/rache/OneDrive/Documenten/Video game making/ITVM-A2-Group-1/Prison/WebGL Builds;;;;;;;\"}"
             }
         ]
     }

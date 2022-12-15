@@ -11,6 +11,8 @@ public class CharacterMovementNoGrid : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+    [SerializeField] private Health health;
+    [SerializeField] private GameObject knockedParticles;
 
     private void HandleAim()
     {
@@ -46,41 +48,48 @@ public class CharacterMovementNoGrid : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        if(health.GetHealthState() != "Knocked")
         {
-            if (Input.GetKey(KeyCode.W))
+            knockedParticles.SetActive(false);
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
             {
-                movement.y = +1f;
+                if (Input.GetKey(KeyCode.W))
+                {
+                    movement.y = +1f;
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    movement.y = -1f;
+                }
             }
-            if (Input.GetKey(KeyCode.S))
+            else
             {
-                movement.y = -1f;
+                movement.y = Input.GetAxisRaw("Vertical");
             }
+
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                if (Input.GetKey(KeyCode.A))
+                {
+                    movement.x = -1f;
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    movement.x = +1f;
+                }
+            }
+            else
+            {
+                movement.x = Input.GetAxisRaw("Horizontal");
+            }
+
+            movement = movement.normalized;
+            animator.SetFloat("Speed", movement.sqrMagnitude);
         }
         else
         {
-            movement.y = Input.GetAxisRaw("Vertical");
+            knockedParticles.SetActive(true);
         }
-
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-        {
-            if (Input.GetKey(KeyCode.A))
-            {
-                movement.x = -1f;
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                movement.x = +1f;
-            }
-        }
-        else
-        {
-            movement.x = Input.GetAxisRaw("Horizontal");
-        }
-
-        movement = movement.normalized;
-
-        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     // Update is called once per frame

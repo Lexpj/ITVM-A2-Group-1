@@ -10,7 +10,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement style="height: 100%; width: 40%;">
-            <ui:Label text="0:00" display-tooltip-when-elided="true" name="clock" style="-unity-text-align: middle-center; width: 100%; height: 40%; margin-top: 7%; margin-left: 0; margin-right: 0; margin-bottom: 0; font-size: 40%; color: rgba(255, 255, 255, 255);" />
+            <ui:Label text="0:00" display-tooltip-when-elided="true" name="clock" style="-unity-text-align: middle-center; width: 100%; height: 40%; margin-top: 7%; margin-left: 0; margin-right: 0; margin-bottom: 0; font-size: 40%; color: rgb(255, 255, 255);" />
         </ui:VisualElement>
         <ui:VisualElement style="height: 100%; width: 30%;" />
     </ui:VisualElement>
