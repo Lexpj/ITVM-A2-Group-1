@@ -16,9 +16,21 @@ public class Task : MonoBehaviour
     private bool player = false;
     private bool prisonerAI = false;
 
+    AudioSource audioSource;
+    public AudioClip win;
+    public AudioClip lose;
+    public bool isClickable = false;
+    public static bool isMinigameOpen = false;
+    private GameObject playerPos;
+
+    [SerializeField] GameObject minigame;
+
     private void Start()
     {
         targetObj = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<taskManager>();
+        playerPos = GameObject.FindGameObjectWithTag("Player");
+        minigame.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -48,10 +60,18 @@ public class Task : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.T) && atTask)
                 {
-                    taskCompleted = true;
-                    targetObj.TaskCompleted();
-                    T_key.SetActive(false);
                     player = false;
+
+                    T_key.SetActive(false);
+
+                    minigame.SetActive(true);
+                    isMinigameOpen = true;
+
+                    if (!isClickable) {
+                        minigame.transform.position = playerPos.transform.position;
+                    } else {
+                        minigame.transform.position = new Vector3(playerPos.transform.position.x,playerPos.transform.position.y,-2);
+                    }
                 }
             }
         }
@@ -61,6 +81,26 @@ public class Task : MonoBehaviour
             taskIcon.SetActive(false);
             disableIcon = true;
         }
+    }
+    
+    public void Completed() {
+        minigame.SetActive(false);
+        isMinigameOpen = false;
+        taskCompleted = true;
+        targetObj.TaskCompleted();
+        exclamation.SetActive(false);
+        disableIcon = true;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = win;
+        audioSource.Play();
+
+    }
+    public void Failed() {
+        minigame.SetActive(false);
+        isMinigameOpen = false;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = lose;
+        audioSource.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -88,5 +128,6 @@ public class Task : MonoBehaviour
     {
         atTask = false;
         T_key.SetActive(false);
+        minigame.SetActive(false);
     }
 }
