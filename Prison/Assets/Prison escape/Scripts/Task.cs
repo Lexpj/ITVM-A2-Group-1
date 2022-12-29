@@ -21,14 +21,14 @@ public class Task : MonoBehaviour
     public AudioClip lose;
     public bool isClickable = false;
     public static bool isMinigameOpen = false;
-    private GameObject playerPos;
+    [SerializeField] GameObject playerPos;
 
     [SerializeField] GameObject minigame;
 
     private void Start()
     {
         targetObj = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<taskManager>();
-        playerPos = GameObject.FindGameObjectWithTag("Player");
+        //playerPos = GameObject.FindGameObjectWithTag("Player");
         minigame.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
         audioSource = GetComponent<AudioSource>();
     }
@@ -58,6 +58,7 @@ public class Task : MonoBehaviour
             }
             if (player)
             {
+                float x = playerPos.transform.position.x;
                 if (Input.GetKey(KeyCode.T) && atTask)
                 {
                     player = false;
@@ -116,6 +117,9 @@ public class Task : MonoBehaviour
         {
             player = false;
             prisonerAI = true;
+        } else
+        {
+            Debug.Log("Hello: World");
         }
 
         if (!taskCompleted && player)
