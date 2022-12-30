@@ -47,7 +47,7 @@ public class PrisonerManager : MonoBehaviour
     {
         if (currentTime <= 0)
         {
-            if (reachedExit < (totalPrisoners % 2))
+            if (reachedExit < (totalPrisoners / 2))
             {
                 LoadEndScene("The guard has won!");
             }
@@ -58,7 +58,7 @@ public class PrisonerManager : MonoBehaviour
                     LoadEndScene("It's a Tie!");
                 }
             }
-            if (reachedExit > (totalPrisoners % 2))
+            if (reachedExit > (totalPrisoners / 2))
             {
                 LoadEndScene("The prisoners have won!");
             }
