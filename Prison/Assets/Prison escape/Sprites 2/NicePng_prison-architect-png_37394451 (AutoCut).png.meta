@@ -1,0 +1,1045 @@
+fileFormatVersion: 2
+guid: 64b4db54649a55049b27f55833fd058d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 640
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f90531421a7e549b74616198365ca5
+      internalID: -1771094181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 647
+        width: 67
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1328cd5c7a120341bc659ce3d5cb6f0
+      internalID: -1052790045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 639
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99be0dfe9dd147144ae5ec562ece3c0f
+      internalID: 849093450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 585
+        width: 65
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0772ea7791298443a7cc0e77f9abe2f
+      internalID: -1404334516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 585
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b54bbbfe00681d41b35ca50653e3225
+      internalID: 1493904588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_23
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 512
+        width: 50
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e463532bd3b84b409382028cde88cb7
+      internalID: -973696846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_24
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 582
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b455b03161eca449bd8bcf94811e38
+      internalID: 139650802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 517
+        width: 65
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522502cca3e8bd6449f7b123a564baf3
+      internalID: -1958876459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_41
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 457
+        width: 113
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8490cf54a5b2c341bacf8355e206b22
+      internalID: -928649930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_42
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 512
+        width: 113
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bce3b8876aebc4eb3e8720d73ab1b0
+      internalID: -742831377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_43
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 513
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f943ae226e2f54f864cba591d6e9f0
+      internalID: -1964107716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_126
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 246
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a1b0cfe5dcfc74dae9be6e72fbecb7
+      internalID: -982516287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1921
+        width: 57
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e8f0427576ee9488f792a59c405a15
+      internalID: 1018221416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_135
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1925
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c86b3b631fe6444c95173badf15bb65
+      internalID: -812566680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_136
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1797
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5116358977035cd4e8db418f10cff768
+      internalID: -284947039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_137
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1921
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20405d1e08734347a73529611dc079c
+      internalID: -1011613113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_138
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1861
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20a58962686c78409d13da872f5af40
+      internalID: -1104063468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_139
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1861
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b323d1297ee5d4b49a5d6e559aa026f7
+      internalID: 1135527924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_140
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1921
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e5ce8a5817d474db3ee82f827de322
+      internalID: 567536466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_141
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1793
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41413d37611620c4da561ad611bc6607
+      internalID: -1370557174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_142
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1793
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d413e903a74a5bc47b8e43b5a4721766
+      internalID: 181407114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_143
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1793
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ca397049f7ac14cb4a4186a3685105
+      internalID: -1273332455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_144
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1921
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9041192b664d6f540af964d511d8f97b
+      internalID: 2035304698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_145
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 1861
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a47b46f1a08c134280846828854f5ad
+      internalID: 1174136543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_146
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 897
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6106753a725884b99bf64a78661c5d
+      internalID: 243691878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_147
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 898
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69a691cc56ff1d4b96eadffd39d405e
+      internalID: 1783313730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_148
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 898
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3202e10677bef4db7a9b4cf2d73118
+      internalID: 1908615487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_149
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 836
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f1427b35a49ab46b224bcee06510fc
+      internalID: 367692200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_150
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 836
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f386e89ecbb6cb48bf82771707e73aa
+      internalID: 1994201281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_151
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 901
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d64a24287210f43935e1dbf4a6076b
+      internalID: -770066954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_152
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 773
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7a168dd48124941bc538cf24a16c94
+      internalID: -1449294114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_153
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 769
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeb9c3491a5e6543a9a16eb603dd92a
+      internalID: 1084958624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_154
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 769
+        width: 60
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d435b0a1e08c67f4996253c2f52b7535
+      internalID: 583242213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 639
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265f8350b08efd84c8730f5b3c6ac808
+      internalID: -1973034178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_7
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 586
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c5a5eb54c93cd47bd2d457a55e2117
+      internalID: 887765781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_prison-architect-png_37394451 (AutoCut)_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 586
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161b9c219aa5db647a7419516fab3204
+      internalID: -1658618559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NicePng_prison-architect-png_37394451 (AutoCut)_89: 874103375
+      NicePng_prison-architect-png_37394451 (AutoCut)_122: 502509256
+      NicePng_prison-architect-png_37394451 (AutoCut)_91: -1741769473
+      NicePng_prison-architect-png_37394451 (AutoCut)_68: 2114343090
+      NicePng_prison-architect-png_37394451 (AutoCut)_44: 143318963
+      NicePng_prison-architect-png_37394451 (AutoCut)_8: -1658618559
+      NicePng_prison-architect-png_37394451 (AutoCut)_71: -349991352
+      NicePng_prison-architect-png_37394451 (AutoCut)_86: 1964703121
+      NicePng_prison-architect-png_37394451 (AutoCut)_124: 18526870
+      NicePng_prison-architect-png_37394451 (AutoCut)_90: 662786
+      NicePng_prison-architect-png_37394451 (AutoCut)_99: 1336082686
+      NicePng_prison-architect-png_37394451 (AutoCut)_103: 888704965
+      NicePng_prison-architect-png_37394451 (AutoCut)_2: -1052790045
+      NicePng_prison-architect-png_37394451 (AutoCut)_110: 1359904131
+      NicePng_prison-architect-png_37394451 (AutoCut)_147: 1783313730
+      NicePng_prison-architect-png_37394451 (AutoCut)_63: 521003818
+      NicePng_prison-architect-png_37394451 (AutoCut)_82: -1807112858
+      NicePng_prison-architect-png_37394451 (AutoCut)_109: 1625730560
+      NicePng_prison-architect-png_37394451 (AutoCut)_4: -1404334516
+      NicePng_prison-architect-png_37394451 (AutoCut)_117: 1761720121
+      NicePng_prison-architect-png_37394451 (AutoCut)_31: 1067031190
+      NicePng_prison-architect-png_37394451 (AutoCut)_10: -129898075
+      NicePng_prison-architect-png_37394451 (AutoCut)_3: 849093450
+      NicePng_prison-architect-png_37394451 (AutoCut)_125: -502624089
+      NicePng_prison-architect-png_37394451 (AutoCut)_23: -973696846
+      NicePng_prison-architect-png_37394451 (AutoCut)_146: 243691878
+      NicePng_prison-architect-png_37394451 (AutoCut)_76: -1824299083
+      NicePng_prison-architect-png_37394451 (AutoCut)_85: 1509894189
+      NicePng_prison-architect-png_37394451 (AutoCut)_137: -1011613113
+      NicePng_prison-architect-png_37394451 (AutoCut)_131: -861233131
+      NicePng_prison-architect-png_37394451 (AutoCut)_104: -1740564141
+      NicePng_prison-architect-png_37394451 (AutoCut)_43: -1964107716
+      NicePng_prison-architect-png_37394451 (AutoCut)_116: -1343467271
+      NicePng_prison-architect-png_37394451 (AutoCut)_106: -266816459
+      NicePng_prison-architect-png_37394451 (AutoCut)_36: -1463285793
+      NicePng_prison-architect-png_37394451 (AutoCut)_102: -793717118
+      NicePng_prison-architect-png_37394451 (AutoCut)_107: -1741612509
+      NicePng_prison-architect-png_37394451 (AutoCut)_24: 139650802
+      NicePng_prison-architect-png_37394451 (AutoCut)_42: -742831377
+      NicePng_prison-architect-png_37394451 (AutoCut)_120: 1649108836
+      NicePng_prison-architect-png_37394451 (AutoCut)_94: -788275568
+      NicePng_prison-architect-png_37394451 (AutoCut)_38: 1971622375
+      NicePng_prison-architect-png_37394451 (AutoCut)_25: -168844798
+      NicePng_prison-architect-png_37394451 (AutoCut)_138: -1104063468
+      NicePng_prison-architect-png_37394451 (AutoCut)_140: 567536466
+      NicePng_prison-architect-png_37394451 (AutoCut)_13: 208546612
+      NicePng_prison-architect-png_37394451 (AutoCut)_69: 1086799024
+      NicePng_prison-architect-png_37394451 (AutoCut)_56: 1264903369
+      NicePng_prison-architect-png_37394451 (AutoCut)_28: -745913416
+      NicePng_prison-architect-png_37394451 (AutoCut)_53: 1618373973
+      NicePng_prison-architect-png_37394451 (AutoCut)_62: 499762032
+      NicePng_prison-architect-png_37394451 (AutoCut)_39: -168738789
+      NicePng_prison-architect-png_37394451 (AutoCut)_105: -998182416
+      NicePng_prison-architect-png_37394451 (AutoCut)_134: 199086866
+      NicePng_prison-architect-png_37394451 (AutoCut)_54: 1199463910
+      NicePng_prison-architect-png_37394451 (AutoCut)_92: -1410941365
+      NicePng_prison-architect-png_37394451 (AutoCut)_12: -546715310
+      NicePng_prison-architect-png_37394451 (AutoCut)_123: 145013773
+      NicePng_prison-architect-png_37394451 (AutoCut)_129: 1800900043
+      NicePng_prison-architect-png_37394451 (AutoCut)_139: 1135527924
+      NicePng_prison-architect-png_37394451 (AutoCut)_145: 1174136543
+      NicePng_prison-architect-png_37394451 (AutoCut)_74: -1597549461
+      NicePng_prison-architect-png_37394451 (AutoCut)_152: -1449294114
+      NicePng_prison-architect-png_37394451 (AutoCut)_51: -1759931894
+      NicePng_prison-architect-png_37394451 (AutoCut)_66: 332549139
+      NicePng_prison-architect-png_37394451 (AutoCut)_128: 1069267750
+      NicePng_prison-architect-png_37394451 (AutoCut)_97: -1967699325
+      NicePng_prison-architect-png_37394451 (AutoCut)_114: -414068868
+      NicePng_prison-architect-png_37394451 (AutoCut)_67: -1610867248
+      NicePng_prison-architect-png_37394451 (AutoCut)_115: -1263274553
+      NicePng_prison-architect-png_37394451 (AutoCut)_113: 1667803187
+      NicePng_prison-architect-png_37394451 (AutoCut)_70: -570889922
+      NicePng_prison-architect-png_37394451 (AutoCut)_15: -2075195875
+      NicePng_prison-architect-png_37394451 (AutoCut)_151: -770066954
+      NicePng_prison-architect-png_37394451 (AutoCut)_7: 887765781
+      NicePng_prison-architect-png_37394451 (AutoCut)_87: -1359132957
+      NicePng_prison-architect-png_37394451 (AutoCut)_127: 675963700
+      NicePng_prison-architect-png_37394451 (AutoCut)_11: -1717701971
+      NicePng_prison-architect-png_37394451 (AutoCut)_19: 1778778815
+      NicePng_prison-architect-png_37394451 (AutoCut)_143: -1273332455
+      NicePng_prison-architect-png_37394451 (AutoCut)_22: -2129999024
+      NicePng_prison-architect-png_37394451 (AutoCut)_18: 681262383
+      NicePng_prison-architect-png_37394451 (AutoCut)_58: 904047606
+      NicePng_prison-architect-png_37394451 (AutoCut)_32: 2008609065
+      NicePng_prison-architect-png_37394451 (AutoCut)_52: -2105429113
+      NicePng_prison-architect-png_37394451 (AutoCut)_20: -1425495200
+      NicePng_prison-architect-png_37394451 (AutoCut)_101: 2075907341
+      NicePng_prison-architect-png_37394451 (AutoCut)_126: -982516287
+      NicePng_prison-architect-png_37394451 (AutoCut)_33: -1796398384
+      NicePng_prison-architect-png_37394451 (AutoCut)_154: 583242213
+      NicePng_prison-architect-png_37394451 (AutoCut)_27: -225898838
+      NicePng_prison-architect-png_37394451 (AutoCut)_29: -334420935
+      NicePng_prison-architect-png_37394451 (AutoCut)_80: -1672768572
+      NicePng_prison-architect-png_37394451 (AutoCut)_96: 601856536
+      NicePng_prison-architect-png_37394451 (AutoCut)_121: 1975157023
+      NicePng_prison-architect-png_37394451 (AutoCut)_148: 1908615487
+      NicePng_prison-architect-png_37394451 (AutoCut)_1: -1771094181
+      NicePng_prison-architect-png_37394451 (AutoCut)_9: 596908687
+      NicePng_prison-architect-png_37394451 (AutoCut)_149: 367692200
+      NicePng_prison-architect-png_37394451 (AutoCut)_88: -1011873227
+      NicePng_prison-architect-png_37394451 (AutoCut)_133: -772445198
+      NicePng_prison-architect-png_37394451 (AutoCut)_21: 589950895
+      NicePng_prison-architect-png_37394451 (AutoCut)_55: 1038028293
+      NicePng_prison-architect-png_37394451 (AutoCut)_150: 1994201281
+      NicePng_prison-architect-png_37394451 (AutoCut)_75: -783593360
+      NicePng_prison-architect-png_37394451 (AutoCut)_83: -85258818
+      NicePng_prison-architect-png_37394451 (AutoCut)_37: 861360253
+      NicePng_prison-architect-png_37394451 (AutoCut)_16: -633567260
+      NicePng_prison-architect-png_37394451 (AutoCut)_60: 1918213424
+      NicePng_prison-architect-png_37394451 (AutoCut)_0: 1018221416
+      NicePng_prison-architect-png_37394451 (AutoCut)_64: -1588876762
+      NicePng_prison-architect-png_37394451 (AutoCut)_65: 794582935
+      NicePng_prison-architect-png_37394451 (AutoCut)_78: 321178144
+      NicePng_prison-architect-png_37394451 (AutoCut)_61: -915466372
+      NicePng_prison-architect-png_37394451 (AutoCut)_79: -1205227383
+      NicePng_prison-architect-png_37394451 (AutoCut)_48: 1678390324
+      NicePng_prison-architect-png_37394451 (AutoCut)_119: 888247192
+      NicePng_prison-architect-png_37394451 (AutoCut)_5: 1493904588
+      NicePng_prison-architect-png_37394451 (AutoCut)_14: -2123853822
+      NicePng_prison-architect-png_37394451 (AutoCut)_47: 1702155008
+      NicePng_prison-architect-png_37394451 (AutoCut)_111: -1476899589
+      NicePng_prison-architect-png_37394451 (AutoCut)_153: 1084958624
+      NicePng_prison-architect-png_37394451 (AutoCut)_40: -1958876459
+      NicePng_prison-architect-png_37394451 (AutoCut)_95: -1702017428
+      NicePng_prison-architect-png_37394451 (AutoCut)_135: -812566680
+      NicePng_prison-architect-png_37394451 (AutoCut)_17: 1173226649
+      NicePng_prison-architect-png_37394451 (AutoCut)_41: -928649930
+      NicePng_prison-architect-png_37394451 (AutoCut)_72: 1643491820
+      NicePng_prison-architect-png_37394451 (AutoCut)_93: -516719469
+      NicePng_prison-architect-png_37394451 (AutoCut)_136: -284947039
+      NicePng_prison-architect-png_37394451 (AutoCut)_130: 8805183
+      NicePng_prison-architect-png_37394451 (AutoCut)_6: -1973034178
+      NicePng_prison-architect-png_37394451 (AutoCut)_57: 1862749323
+      NicePng_prison-architect-png_37394451 (AutoCut)_50: -1274032905
+      NicePng_prison-architect-png_37394451 (AutoCut)_30: -706159468
+      NicePng_prison-architect-png_37394451 (AutoCut)_59: 1254117709
+      NicePng_prison-architect-png_37394451 (AutoCut)_141: -1370557174
+      NicePng_prison-architect-png_37394451 (AutoCut)_132: -40907551
+      NicePng_prison-architect-png_37394451 (AutoCut)_142: 181407114
+      NicePng_prison-architect-png_37394451 (AutoCut)_34: 2146017889
+      NicePng_prison-architect-png_37394451 (AutoCut)_144: 2035304698
+      NicePng_prison-architect-png_37394451 (AutoCut)_118: 761624994
+      NicePng_prison-architect-png_37394451 (AutoCut)_108: -388373610
+      NicePng_prison-architect-png_37394451 (AutoCut)_84: 1947432099
+      NicePng_prison-architect-png_37394451 (AutoCut)_100: -2034688010
+      NicePng_prison-architect-png_37394451 (AutoCut)_49: -1081933658
+      NicePng_prison-architect-png_37394451 (AutoCut)_35: 1146437727
+      NicePng_prison-architect-png_37394451 (AutoCut)_81: -1583934690
+      NicePng_prison-architect-png_37394451 (AutoCut)_98: -1401250835
+      NicePng_prison-architect-png_37394451 (AutoCut)_112: -317779867
+      NicePng_prison-architect-png_37394451 (AutoCut)_73: -700040138
+      NicePng_prison-architect-png_37394451 (AutoCut)_45: 292529219
+      NicePng_prison-architect-png_37394451 (AutoCut)_46: 702965402
+      NicePng_prison-architect-png_37394451 (AutoCut)_26: 249762616
+      NicePng_prison-architect-png_37394451 (AutoCut)_77: -2022404599
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
