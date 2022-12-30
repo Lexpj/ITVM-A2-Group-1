@@ -12,6 +12,8 @@ TagManager:
   - Tile
   - Capture
   - Guard
+  - Stone
+  - Walls
   layers:
   - Default
   - TransparentFX

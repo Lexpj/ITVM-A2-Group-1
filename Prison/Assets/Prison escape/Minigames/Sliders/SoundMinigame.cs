@@ -72,9 +72,14 @@ public class SoundMinigame : MonoBehaviour
         slider2.GetComponent<audioSlider>().init();
         slider3.GetComponent<audioSlider>().init();
         slider4.GetComponent<audioSlider>().init();
+        played1 = false;
+        played2 = false;
+        played3 = false;
+        played4 = false;
     }
 
     void checkIfWon() {
+        Debug.Log(valid);
         float faults = 0f;
         float placeholder;
         placeholder = slider1.GetComponent<audioSlider>().pitch - correctPitch1;
@@ -116,6 +121,17 @@ public class SoundMinigame : MonoBehaviour
     }
 
     void Failed() {
+        check1.SetActive(false);
+        check2.SetActive(false);
+        check3.SetActive(false);
+        check4.SetActive(false);
+        cross1.SetActive(false);
+        cross2.SetActive(false);
+        cross3.SetActive(false);
+        cross4.SetActive(false);
+        firstCircle.SetActive(true);
+        secondCircle.SetActive(false);
+        valid = false;
         init();
         task.Failed();
     }
@@ -134,7 +150,7 @@ public class SoundMinigame : MonoBehaviour
                     cross1.SetActive(true);
                 }
             }
-        } else if (Time.time-startTime > 1 && Time.time-startTime < 2 && !played2) {
+        } else if (Time.time-startTime > 1 && !played2) {
             audioSource.pitch = correctPitch2;
             audioSource.PlayOneShot(click,1);
             played2 = true;
@@ -145,7 +161,7 @@ public class SoundMinigame : MonoBehaviour
                     cross2.SetActive(true);
                 }
             }
-        } else if (Time.time-startTime > 2 && Time.time-startTime < 3 && !played3) {
+        } else if (Time.time-startTime > 2 && !played3) {
             audioSource.pitch = correctPitch3;
             audioSource.PlayOneShot(click,1);
             played3 = true;
@@ -156,7 +172,7 @@ public class SoundMinigame : MonoBehaviour
                     cross3.SetActive(true);
                 }
             }
-        } else if (Time.time-startTime > 3 && Time.time-startTime < 4 && !played4) {
+        } else if (Time.time-startTime > 3 && !played4) {
             audioSource.pitch = correctPitch4;
             audioSource.PlayOneShot(click,1);
             played4 = true;
@@ -167,7 +183,7 @@ public class SoundMinigame : MonoBehaviour
                     cross4.SetActive(true);
                 }
             }
-        } else if (Time.time-startTime > 4 && Time.time-startTime < 5 && played4) {
+        } else if (Time.time-startTime > 4 && played4) {
             checkIfWon();
         }
     }

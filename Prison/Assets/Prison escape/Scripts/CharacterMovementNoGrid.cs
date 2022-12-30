@@ -53,6 +53,8 @@ public class CharacterMovementNoGrid : MonoBehaviour
 
     private void HandleMovement()
     {
+        Debug.Log(health.GetHealthState());
+        Debug.Log(captured);
         if (health.GetHealthState() != "Knocked" && !captured)
         {
             counter = 0;
@@ -119,6 +121,7 @@ public class CharacterMovementNoGrid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         HandleMovement();
         HandleAim();
     }
