@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     private string healthState = "";
     private bool canBeCaptured = false;
     private float healthCounter = 0f;
+    private Transform lastPosBeforeKnock;
+    private bool savedPos;
     [SerializeField] private GameObject kindOfPlayer;
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI healthStatus;
@@ -24,7 +26,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         CheckHealthState();
-        if(healthState == "Knocked")
+        if (healthState == "Knocked")
         {
             rechargeHealth();
         }
@@ -42,7 +44,7 @@ public class Health : MonoBehaviour
 
     public void Damage(int DamageAmount)
     {
-        if(healthState != "Knocked")
+        if (healthState != "Knocked")
         {
             health = health - DamageAmount;
 
@@ -53,28 +55,43 @@ public class Health : MonoBehaviour
         }
     }
 
+    public void BringToInjured()
+    {
+        health = 50;
+    }
+
+    public Transform lastPos()
+    {
+        return lastPosBeforeKnock;
+    }
+
     private void CheckHealthState()
     {
-        if(health == 100)
+        if (health == 100)
         {
             healthState = "Healthy";
         }
-        if(health == 50)
+        if (health == 50)
         {
             healthState = "Injured";
         }
-        if(health < 50)
+        if (health < 50)
         {
+            if (!savedPos)
+            {
+                savedPos = true;
+                lastPosBeforeKnock = transform;
+            }
             healthState = "Knocked";
         }
     }
 
     private void rechargeHealth()
     {
-        if(health < 50)
+        if (health < 50)
         {
             healthCounter += Time.deltaTime;
-            if(healthCounter >= 0.1)
+            if (healthCounter >= 0.1)
             {
                 health++;
                 healthCounter = 0f;

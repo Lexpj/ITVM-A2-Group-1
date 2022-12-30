@@ -21689,9 +21689,9 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_344: -868020428
       Prison_Architect_SpriteSheet_7 1_886: -957786157
       Prison_Architect_SpriteSheet_7 1_214: 68265461
-      Prison_Architect_SpriteSheet_7 1_290: -1272753857
       Prison_Architect_SpriteSheet_7 1_545: 200150363
       Prison_Architect_SpriteSheet_7 1_793: -1316234659
+      Prison_Architect_SpriteSheet_7 1_290: -1272753857
       Prison_Architect_SpriteSheet_7 1_653: 754165158
       Prison_Architect_SpriteSheet_7 1_596: -1173747535
       Prison_Architect_SpriteSheet_7 1_416: 1379906909
@@ -21705,24 +21705,24 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_119: 1977215340
       Prison_Architect_SpriteSheet_7 1_969: 1831509749
       Prison_Architect_SpriteSheet_7 1_311: 799141676
-      Prison_Architect_SpriteSheet_7 1_393: 1136549800
-      Prison_Architect_SpriteSheet_7 1_747: -1575400796
-      Prison_Architect_SpriteSheet_7 1_389: 731919326
       Prison_Architect_SpriteSheet_7 1_487: -659626376
+      Prison_Architect_SpriteSheet_7 1_393: 1136549800
+      Prison_Architect_SpriteSheet_7 1_389: 731919326
+      Prison_Architect_SpriteSheet_7 1_747: -1575400796
+      Prison_Architect_SpriteSheet_7 1_848: 2087082914
       Prison_Architect_SpriteSheet_7 1_675: -871345529
       Prison_Architect_SpriteSheet_7 1_779: -512046754
       Prison_Architect_SpriteSheet_7 1_951: 902135033
       Prison_Architect_SpriteSheet_7 1_478: -713857733
-      Prison_Architect_SpriteSheet_7 1_355: -874587437
+      Prison_Architect_SpriteSheet_7 1_768: -1682347374
       Prison_Architect_SpriteSheet_7 1_824: -1559918417
       Prison_Architect_SpriteSheet_7 1_281: -1078975179
       Prison_Architect_SpriteSheet_7 1_92: -1301321465
-      Prison_Architect_SpriteSheet_7 1_848: 2087082914
-      Prison_Architect_SpriteSheet_7 1_768: -1682347374
+      Prison_Architect_SpriteSheet_7 1_355: -874587437
       Prison_Architect_SpriteSheet_7 1_352: -1044588190
       Prison_Architect_SpriteSheet_7 1_50: 620450932
-      Prison_Architect_SpriteSheet_7 1_188: 1941502628
       Prison_Architect_SpriteSheet_7 1_1016: 1812186268
+      Prison_Architect_SpriteSheet_7 1_188: 1941502628
       Prison_Architect_SpriteSheet_7 1_586: -1450759015
       Prison_Architect_SpriteSheet_7 1_982: -1791109375
       Prison_Architect_SpriteSheet_7 1_729: -326654567
@@ -21810,8 +21810,8 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_396: 1564721566
       Prison_Architect_SpriteSheet_7 1_131: 876333304
       Prison_Architect_SpriteSheet_7 1_100: 1496078736
-      Prison_Architect_SpriteSheet_7 1_576: 1083398573
       Prison_Architect_SpriteSheet_7 1_622: -1253181091
+      Prison_Architect_SpriteSheet_7 1_576: 1083398573
       Prison_Architect_SpriteSheet_7 1_613: -664027631
       Prison_Architect_SpriteSheet_7 1_130: -97120809
       Prison_Architect_SpriteSheet_7 1_191: -1054978040
@@ -21892,15 +21892,15 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_1004: -501832417
       Prison_Architect_SpriteSheet_7 1_856: -2049805262
       Prison_Architect_SpriteSheet_7 1_0: -945917756
-      Prison_Architect_SpriteSheet_7 1_362: -372861797
       Prison_Architect_SpriteSheet_7 1_278: -1321399233
       Prison_Architect_SpriteSheet_7 1_436: 1918579042
       Prison_Architect_SpriteSheet_7 1_579: -283744938
       Prison_Architect_SpriteSheet_7 1_640: -253096197
-      Prison_Architect_SpriteSheet_7 1_447: -1001105716
+      Prison_Architect_SpriteSheet_7 1_362: -372861797
       Prison_Architect_SpriteSheet_7 1_988: 1308002432
       Prison_Architect_SpriteSheet_7 1_990: 1108908476
       Prison_Architect_SpriteSheet_7 1_39: -462143940
+      Prison_Architect_SpriteSheet_7 1_447: -1001105716
       Prison_Architect_SpriteSheet_7 1_405: 344614958
       Prison_Architect_SpriteSheet_7 1_511: -790434422
       Prison_Architect_SpriteSheet_7 1_54: 1937998612
@@ -22053,11 +22053,10 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_181: 284750471
       Prison_Architect_SpriteSheet_7 1_553: -770056250
       Prison_Architect_SpriteSheet_7 1_594: -2051645830
-      Prison_Architect_SpriteSheet_7 1_337: 571207269
+      Prison_Architect_SpriteSheet_7 1_1019: -772000041
       Prison_Architect_SpriteSheet_7 1_635: -937695882
       Prison_Architect_SpriteSheet_7 1_875: -554602162
-      Prison_Architect_SpriteSheet_7 1_146: 1122548661
-      Prison_Architect_SpriteSheet_7 1_1019: -772000041
+      Prison_Architect_SpriteSheet_7 1_337: 571207269
       Prison_Architect_SpriteSheet_7 1_964: -1773929258
       Prison_Architect_SpriteSheet_7 1_306: 1516624779
       Prison_Architect_SpriteSheet_7 1_805: 1652198073
@@ -22067,6 +22066,7 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_518: -2024753024
       Prison_Architect_SpriteSheet_7 1_706: 524643725
       Prison_Architect_SpriteSheet_7 1_345: -549736401
+      Prison_Architect_SpriteSheet_7 1_146: 1122548661
       Prison_Architect_SpriteSheet_7 1_213: 583588813
       Prison_Architect_SpriteSheet_7 1_746: -2068706746
       Prison_Architect_SpriteSheet_7 1_187: -853257091
@@ -22086,11 +22086,11 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_52: -1828971632
       Prison_Architect_SpriteSheet_7 1_304: -51017931
       Prison_Architect_SpriteSheet_7 1_763: 397244740
-      Prison_Architect_SpriteSheet_7 1_783: -1115503730
+      Prison_Architect_SpriteSheet_7 1_938: 660833636
       Prison_Architect_SpriteSheet_7 1_64: -839142034
       Prison_Architect_SpriteSheet_7 1_75: -482813372
-      Prison_Architect_SpriteSheet_7 1_938: 660833636
       Prison_Architect_SpriteSheet_7 1_1005: 1418670094
+      Prison_Architect_SpriteSheet_7 1_783: -1115503730
       Prison_Architect_SpriteSheet_7 1_562: -216258531
       Prison_Architect_SpriteSheet_7 1_718: 386537298
       Prison_Architect_SpriteSheet_7 1_744: 1331007284
@@ -22122,7 +22122,6 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_174: -839691795
       Prison_Architect_SpriteSheet_7 1_972: -1083972494
       Prison_Architect_SpriteSheet_7 1_86: -1230043740
-      Prison_Architect_SpriteSheet_7 1_159: 1830716426
       Prison_Architect_SpriteSheet_7 1_437: 1608486390
       Prison_Architect_SpriteSheet_7 1_460: -1596900876
       Prison_Architect_SpriteSheet_7 1_935: -570354775
@@ -22131,6 +22130,7 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_595: 1378175591
       Prison_Architect_SpriteSheet_7 1_651: -1443060836
       Prison_Architect_SpriteSheet_7 1_732: -976920517
+      Prison_Architect_SpriteSheet_7 1_159: 1830716426
       Prison_Architect_SpriteSheet_7 1_258: 1421789410
       Prison_Architect_SpriteSheet_7 1_648: 1998727905
       Prison_Architect_SpriteSheet_7 1_452: 1545433984
@@ -22144,44 +22144,44 @@ TextureImporter:
       Prison_Architect_SpriteSheet_7 1_532: -968836563
       Prison_Architect_SpriteSheet_7 1_967: 1889923228
       Prison_Architect_SpriteSheet_7 1_298: -1082543839
-      Prison_Architect_SpriteSheet_7 1_196: 1605552130
-      Prison_Architect_SpriteSheet_7 1_474: 2077527423
       Prison_Architect_SpriteSheet_7 1_495: 1279435391
-      Prison_Architect_SpriteSheet_7 1_473: -754629084
+      Prison_Architect_SpriteSheet_7 1_196: 1605552130
       Prison_Architect_SpriteSheet_7 1_789: -1839159863
+      Prison_Architect_SpriteSheet_7 1_473: -754629084
+      Prison_Architect_SpriteSheet_7 1_790: 406237562
       Prison_Architect_SpriteSheet_7 1_980: -1974296421
       Prison_Architect_SpriteSheet_7 1_418: 1957651487
       Prison_Architect_SpriteSheet_7 1_917: 1361694858
       Prison_Architect_SpriteSheet_7 1_128: 1202215257
+      Prison_Architect_SpriteSheet_7 1_474: 2077527423
       Prison_Architect_SpriteSheet_7 1_328: -1817037370
       Prison_Architect_SpriteSheet_7 1_1013: 1194331625
       Prison_Architect_SpriteSheet_7 1_674: -1891274651
-      Prison_Architect_SpriteSheet_7 1_790: 406237562
       Prison_Architect_SpriteSheet_7 1_357: 1735206244
       Prison_Architect_SpriteSheet_7 1_610: -903739795
       Prison_Architect_SpriteSheet_7 1_529: -1924908846
       Prison_Architect_SpriteSheet_7 1_979: -768059931
       Prison_Architect_SpriteSheet_7 1_141: 1357662430
       Prison_Architect_SpriteSheet_7 1_221: 1052488515
-      Prison_Architect_SpriteSheet_7 1_369: 462300754
+      Prison_Architect_SpriteSheet_7 1_845: -951954668
       Prison_Architect_SpriteSheet_7 1_216: -491221892
       Prison_Architect_SpriteSheet_7 1_373: -78305079
       Prison_Architect_SpriteSheet_7 1_608: 1792861747
       Prison_Architect_SpriteSheet_7 1_743: -1175964235
-      Prison_Architect_SpriteSheet_7 1_845: -951954668
-      Prison_Architect_SpriteSheet_7 1_846: 1739827370
+      Prison_Architect_SpriteSheet_7 1_865: 1959421236
+      Prison_Architect_SpriteSheet_7 1_369: 462300754
       Prison_Architect_SpriteSheet_7 1_247: -665365647
       Prison_Architect_SpriteSheet_7 1_411: -947706327
       Prison_Architect_SpriteSheet_7 1_24: -1179997058
+      Prison_Architect_SpriteSheet_7 1_846: 1739827370
       Prison_Architect_SpriteSheet_7 1_392: 682788316
-      Prison_Architect_SpriteSheet_7 1_616: -609927076
-      Prison_Architect_SpriteSheet_7 1_59: 1359948710
       Prison_Architect_SpriteSheet_7 1_707: 220511471
+      Prison_Architect_SpriteSheet_7 1_59: 1359948710
+      Prison_Architect_SpriteSheet_7 1_616: -609927076
+      Prison_Architect_SpriteSheet_7 1_941: -1688627860
       Prison_Architect_SpriteSheet_7 1_515: -2094023109
-      Prison_Architect_SpriteSheet_7 1_865: 1959421236
       Prison_Architect_SpriteSheet_7 1_835: 1307149990
       Prison_Architect_SpriteSheet_7 1_69: -178713603
-      Prison_Architect_SpriteSheet_7 1_941: -1688627860
       Prison_Architect_SpriteSheet_7 1_97: -1842967359
       Prison_Architect_SpriteSheet_7 1_825: 1687448414
       Prison_Architect_SpriteSheet_7 1_332: -1804533801

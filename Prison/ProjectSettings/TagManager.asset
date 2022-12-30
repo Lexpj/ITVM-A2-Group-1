@@ -10,6 +10,8 @@ TagManager:
   - PrisonerAI
   - Patrol
   - Tile
+  - Capture
+  - Guard
   layers:
   - Default
   - TransparentFX
