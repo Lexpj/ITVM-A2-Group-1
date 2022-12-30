@@ -16,6 +16,9 @@ public class Health : MonoBehaviour
     [SerializeField] private Slider slider;
     [SerializeField] private TextMeshProUGUI healthStatus;
 
+    [SerializeField] GameObject knocked;
+    [SerializeField] GameObject injured;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,18 @@ public class Health : MonoBehaviour
         if (healthState == "Knocked")
         {
             rechargeHealth();
+            knocked.SetActive(true);
+            injured.SetActive(false);
+        }
+        if(healthState == "Injured")
+        {
+            knocked.SetActive(false);
+            injured.SetActive(true);
+        }
+        if(healthState == "Healthy")
+        {
+            knocked.SetActive(false);
+            injured.SetActive(false);
         }
         if (kindOfPlayer.CompareTag("Player"))
         {

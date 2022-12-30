@@ -1,0 +1,794 @@
+fileFormatVersion: 2
+guid: d9ac5a29d79ec1846ba231fa25ee1704
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prisoner4_1_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1288
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a451559901640408d3fb315458edc6
+      internalID: 1925676377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1281
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95300d257db12849b6b3b3e13639fa4
+      internalID: 222467482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1281
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1e36511fa5c4d4081ef482152416f3
+      internalID: 1857516107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1281
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe287f7d6a678d40a819931f218c0d7
+      internalID: 2017949190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_4
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 1277
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a3d9c62f5b8e04baa90f2b64a11811
+      internalID: 1141945426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_5
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1274
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83c934f9dc46f8459b98335aa2fc1ed
+      internalID: -1205251893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 979
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a976ef0e80a27f408cbe54506c6f00a
+      internalID: -1721711449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 971
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac85655b6eeaba4baf7185e5b6709eb
+      internalID: -1740623425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 969
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d90c5ff911290c428d418e265bf7c29
+      internalID: 1675188990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_9
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 979
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400b763d3beeef14392301520cca8014
+      internalID: -25224728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_10
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 971
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce72e78d71366cf42b8a461d18239e74
+      internalID: -91078856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_11
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 971
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88b761d14433884c864b85e79cdea3f
+      internalID: -1629475764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 661
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34ee790857576a438f1c42c045abd14
+      internalID: 652998588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_13
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 660
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6bdaf9074cf524e9de40dd4390c784
+      internalID: -603445770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_14
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 653
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e3049a1998e1247806ef52d5495427
+      internalID: 1652048993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_15
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 653
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0830c131a541d5449af55ab71bd58a8e
+      internalID: -292096946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_16
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 649
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa63660a5c504e40b43218824bd981f
+      internalID: -316955509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_17
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 646
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cdcd5b36cadc7498f5b41f61caa0bd
+      internalID: 856988111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_18
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 353
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db538c2b5c768e741847e1fe837ff55c
+      internalID: 1586630001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 343
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b775e59f490934598b36b95f629caa
+      internalID: -948990121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_20
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 343
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae386711e0b6d24bb28c47ff95b87c0
+      internalID: 696014924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_21
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 353
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28f8c387e7de5c4c957d4154be3cac1
+      internalID: 141594899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_22
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 343
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e72ee658480734d9555877800d59e7
+      internalID: 577079631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_23
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 343
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710185394211baf478d7f03a36591e63
+      internalID: 1371479575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_24
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 34
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef622afbc15f0194dac472cd15922676
+      internalID: -22944702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_25
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 27
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cfb4aba2c1dd64cb6c8a600f346dfc
+      internalID: -217754356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_26
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 30
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f22ed9ae9da464696873ce8802ba9f
+      internalID: -1411323807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_27
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 34
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af94b1982ec1a494d87ee074b230a094
+      internalID: -2088288942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_28
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 27
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77358635dde35af4181fc93b087fe4da
+      internalID: 557344595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prisoner4_1_29
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 27
+        width: 189
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c7047518251bf43af6fa5da9148b21
+      internalID: 1079708707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      prisoner4_1_20: 696014924
+      prisoner4_1_7: -1740623425
+      prisoner4_1_0: 1925676377
+      prisoner4_1_6: -1721711449
+      prisoner4_1_13: -603445770
+      prisoner4_1_14: 1652048993
+      prisoner4_1_26: -1411323807
+      prisoner4_1_4: 1141945426
+      prisoner4_1_15: -292096946
+      prisoner4_1_21: 141594899
+      prisoner4_1_24: -22944702
+      prisoner4_1_25: -217754356
+      prisoner4_1_5: -1205251893
+      prisoner4_1_8: 1675188990
+      prisoner4_1_23: 1371479575
+      prisoner4_1_3: 2017949190
+      prisoner4_1_17: 856988111
+      prisoner4_1_10: -91078856
+      prisoner4_1_28: 557344595
+      prisoner4_1_12: 652998588
+      prisoner4_1_19: -948990121
+      prisoner4_1_1: 222467482
+      prisoner4_1_11: -1629475764
+      prisoner4_1_2: 1857516107
+      prisoner4_1_22: 577079631
+      prisoner4_1_27: -2088288942
+      prisoner4_1_9: -25224728
+      prisoner4_1_16: -316955509
+      prisoner4_1_18: 1586630001
+      prisoner4_1_29: 1079708707
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

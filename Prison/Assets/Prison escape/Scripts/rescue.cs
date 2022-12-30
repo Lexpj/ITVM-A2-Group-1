@@ -11,6 +11,7 @@ public class rescue : MonoBehaviour
     private string rescuerKind;
     private bool atRescuePoint = false;
     private float counter = 0f;
+    [SerializeField] GameObject R_key;
 
     // Update is called once per frame
     void Update()
@@ -24,9 +25,11 @@ public class rescue : MonoBehaviour
         {
             if (rescuerKind == "Player" && atRescuePoint)
             {
+                R_key.SetActive(true);
                 if (Input.GetKey(KeyCode.R))
                 {
                     rescued();
+                    R_key.SetActive(false);
                 }
             }
             if (rescuerKind == "PrisonerAI" && atRescuePoint)
