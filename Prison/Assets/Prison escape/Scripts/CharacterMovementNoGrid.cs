@@ -11,8 +11,13 @@ public class CharacterMovementNoGrid : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
+    private bool captured = false;
+    [SerializeField] Transform Guard;
+    [SerializeField] GuardAI guardCapturePoints;
     [SerializeField] private Health health;
     [SerializeField] private GameObject knockedParticles;
+    [SerializeField] private GameObject cross;
+    private float counter = 0f;
 
     private void HandleAim()
     {
@@ -48,8 +53,9 @@ public class CharacterMovementNoGrid : MonoBehaviour
 
     private void HandleMovement()
     {
-        if(health.GetHealthState() != "Knocked")
+        if (health.GetHealthState() != "Knocked" && !captured)
         {
+            counter = 0;
             knockedParticles.SetActive(false);
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
             {
@@ -88,8 +94,26 @@ public class CharacterMovementNoGrid : MonoBehaviour
         }
         else
         {
+            counter = 0;
             knockedParticles.SetActive(true);
         }
+    }
+
+    public void capture(bool capture)
+    {
+        captured = capture;
+        cross.SetActive(capture);
+        counter = 0f;
+    }
+
+    public bool isCaptured()
+    {
+        return captured;
+    }
+
+    public void setHealthToInjured()
+    {
+        health.BringToInjured();
     }
 
     // Update is called once per frame
@@ -103,4 +127,5 @@ public class CharacterMovementNoGrid : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
 }

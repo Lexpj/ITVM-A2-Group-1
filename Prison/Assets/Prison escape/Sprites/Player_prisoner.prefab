@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2035564308544172744
 Transform:
   m_ObjectHideFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035564309901766345}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035564309438329120
 GameObject:
@@ -56,13 +56,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035564309438329120}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1.1999998, y: 1.1999998, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035564309901766345}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2035564309438329123
 MeshFilter:
@@ -127,7 +127,6 @@ GameObject:
   - component: {fileID: 2035564309901766351}
   - component: {fileID: 2035564309901766349}
   - component: {fileID: 2035564309901766356}
-  - component: {fileID: 2035564309901766357}
   - component: {fileID: 2035564309901766358}
   m_Layer: 0
   m_Name: Player_prisoner
@@ -148,8 +147,8 @@ Transform:
   m_LocalScale: {x: 1.009375, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2035564309438329121}
   - {fileID: 2035564308544172744}
+  - {fileID: 2035564309438329121}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -262,27 +261,6 @@ CircleCollider2D:
   m_Offset: {x: -0.00930354, y: -0.2610742}
   serializedVersion: 2
   m_Radius: 0.23458236
---- !u!114 &2035564309901766357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035564309901766348}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0abb27ffa49a4b49bf1923155761137, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aimTransform: {fileID: 2035564309901766345}
-  fieldOfView: {fileID: 0}
-  moveSpeed: 5
-  movePoint: {fileID: 2035564308544172744}
-  whatStopsMovement:
-    serializedVersion: 2
-    m_Bits: 8
-  rb: {fileID: 2035564309901766349}
-  animator: {fileID: 2035564309901766351}
 --- !u!114 &2035564309901766358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,3 +278,8 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 2035564309901766349}
   animator: {fileID: 2035564309901766351}
+  Guard: {fileID: 0}
+  guardCapturePoints: {fileID: 0}
+  health: {fileID: 0}
+  knockedParticles: {fileID: 0}
+  cross: {fileID: 0}

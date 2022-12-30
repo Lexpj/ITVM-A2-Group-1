@@ -37,7 +37,7 @@ public class PrisonerManager : MonoBehaviour
 
     private void updateText()
     {
-        if(!AllPrisonersReachedExit && prevReachedExit < reachedExit)
+        if (!AllPrisonersReachedExit && prevReachedExit < reachedExit)
         {
             prisonLabel.text = $"Prisoners escaped {reachedExit}/{totalPrisoners}";
         }
@@ -45,21 +45,25 @@ public class PrisonerManager : MonoBehaviour
 
     private void AllPrisonersEscaped()
     {
-        if(currentTime <= 0)
+        if (currentTime <= 0)
         {
-            if(reachedExit < (totalPrisoners % 2))
+            if (reachedExit < (totalPrisoners % 2))
             {
                 LoadEndScene("The guard has won!");
             }
-            if(totalPrisoners % 2 == 0)
+            if (totalPrisoners % 2 == 0)
             {
-                if(reachedExit == (totalPrisoners / 2))
+                if (reachedExit == (totalPrisoners / 2))
                 {
                     LoadEndScene("It's a Tie!");
                 }
             }
+            if (reachedExit > (totalPrisoners % 2))
+            {
+                LoadEndScene("The prisoners have won!");
+            }
         }
-        if(reachedExit == totalPrisoners)
+        if (reachedExit == totalPrisoners)
         {
             LoadEndScene("The prisoners have won!");
         }
@@ -69,7 +73,7 @@ public class PrisonerManager : MonoBehaviour
     {
         currentTime -= 1 * Time.deltaTime;
 
-        if(currentTime <= 0)
+        if (currentTime <= 0)
         {
             currentTime = 0;
         }
@@ -98,5 +102,5 @@ public class PrisonerManager : MonoBehaviour
         StateNameController.endGameText = input;
         SceneManager.LoadScene("EndScene");
     }
-    
+
 }

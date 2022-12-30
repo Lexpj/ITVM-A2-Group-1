@@ -13,6 +13,7 @@ public class Task : MonoBehaviour
     public GameObject T_key;
     public GameObject exclamation;
     public GameObject taskIcon;
+    private GuardAI guardScript;
     private bool player = false;
     private bool prisonerAI = false;
 
@@ -23,12 +24,14 @@ public class Task : MonoBehaviour
     public static bool isMinigameOpen = false;
     private GameObject playerPos;
 
+    public float completionRate = 70f;
     [SerializeField] GameObject minigame;
 
     private void Start()
     {
         targetObj = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<taskManager>();
         playerPos = GameObject.FindGameObjectWithTag("Player");
+        guardScript = GameObject.FindGameObjectWithTag("Guard").GetComponent<GuardAI>();
         minigame.transform.localScale = new Vector3(0.4f,0.4f,0.4f);
         audioSource = GetComponent<AudioSource>();
     }
@@ -51,9 +54,22 @@ public class Task : MonoBehaviour
 
                 if (counter >= secondsToCompleteTask)
                 {
-                    targetObj.TaskCompleted();              
-                    taskCompleted = true;
-                    prisonerAI = false;
+                    float randomNumber = Random.Range(0f, 100f);
+
+                    if(randomNumber <= completionRate)
+                    {
+                        targetObj.TaskCompleted();
+                        taskCompleted = true;
+                        prisonerAI = false;
+                    }
+                    else
+                    {
+                        guardScript.setNotified(this.transform);
+                        audioSource = GetComponent<AudioSource>();
+                        audioSource.clip = lose;
+                        audioSource.Play();
+                        counter = 0f;
+                    }
                 }
             }
             if (player)
@@ -89,6 +105,7 @@ public class Task : MonoBehaviour
         taskCompleted = true;
         targetObj.TaskCompleted();
         exclamation.SetActive(false);
+        taskIcon.SetActive(false);
         disableIcon = true;
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = win;
@@ -98,6 +115,7 @@ public class Task : MonoBehaviour
     public void Failed() {
         minigame.SetActive(false);
         isMinigameOpen = false;
+        guardScript.setNotified(this.transform);
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = lose;
         audioSource.Play();

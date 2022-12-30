@@ -11,6 +11,8 @@ public class taskManager : MonoBehaviour
     private int prevCompletedTasks = 0;
     public bool endTaskEnabled = false;
     public GameObject lastTask;
+    public GameObject Door;
+    public GameObject endDoor;
     public GameObject endPoint;
     public bool allTasksCompleted;
     [SerializeField] private TextMeshProUGUI TaskBar;
@@ -40,12 +42,14 @@ public class taskManager : MonoBehaviour
         {
             totalTasks++;
             lastTask.SetActive(true);
+            Door.SetActive(false);
             endTaskEnabled = true;
         }
 
         if(totalTasks == completedTasks && endTaskEnabled)
         {
             endPoint.SetActive(true);
+            endDoor.SetActive(false);
             allTasksCompleted = true;
         }
     }
