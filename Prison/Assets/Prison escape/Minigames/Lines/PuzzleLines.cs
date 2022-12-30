@@ -185,6 +185,7 @@ public class PuzzleLines : MonoBehaviour
     private float firstIncreaseTime;
     private bool secondIncrease = false;
     private float secondIncreaseTime;
+    private int totalconnections = 0;
 
     // Task
     public Task task;
@@ -224,6 +225,7 @@ public class PuzzleLines : MonoBehaviour
         secondIncrease = false;
         secondIncreaseTime = maxTime / 3;
         clicked = false;
+        totalconnections = 0;
         for (int i = 0; i < tiles.GetLength(0); i++) {
             for (int j = 0; j < tiles.GetLength(1); j++) {
                 tiles[i,j].init(); // reset lines and orientation
@@ -235,6 +237,7 @@ public class PuzzleLines : MonoBehaviour
                 if (configChance <= density) {
                     tiles[i,j].lines[0] = 1;
                     tiles[i,j+1].lines[2] = 1;
+                    totalconnections += 1;
                 }
             }
         }  
@@ -245,6 +248,7 @@ public class PuzzleLines : MonoBehaviour
                 if (configChance <= density) {
                     tiles[j,i].lines[3] = 1;
                     tiles[j+1,i].lines[1] = 1;
+                    totalconnections += 1;
                 }
             }
         }  
@@ -274,13 +278,15 @@ public class PuzzleLines : MonoBehaviour
 
     bool checkState() {
         bool found = true;
-
+        int connections = 0;
         // Horizontal
         for (int i = 0; i < tiles.GetLength(0); i++) {
             for (int j = 0; j < tiles.GetLength(1)-1; j++) {
                 if (!(checkSameArray(tiles[i,j].lines[(tiles[i,j].orientation)%4],tiles[i,j+1].lines[(2+tiles[i,j+1].orientation)%4]))) {
                     found = false;
                     break;
+                } else if (tiles[i,j].lines[(tiles[i,j].orientation)%4] == tiles[i,j+1].lines[(2+tiles[i,j+1].orientation)%4] && tiles[i,j].lines[(tiles[i,j].orientation)%4] == 1) {
+                    connections += 1;
                 }
             }
         }  
@@ -290,10 +296,14 @@ public class PuzzleLines : MonoBehaviour
                 if (!(checkSameArray(tiles[j,i].lines[(3+tiles[j,i].orientation)%4],tiles[j+1,i].lines[(1+tiles[j+1,i].orientation)%4]))) {
                     found = false;
                     break;
+                } else if (tiles[j,i].lines[(3+tiles[j,i].orientation)%4] == tiles[j+1,i].lines[(1+tiles[j+1,i].orientation)%4] && tiles[j,i].lines[(3+tiles[j,i].orientation)%4] == 1) {
+                    connections += 1;
                 }
             }
         } 
-
+        if (connections != totalconnections) {
+            return false;
+        }
         // If found, play some sound or smth
         return found;
     }
