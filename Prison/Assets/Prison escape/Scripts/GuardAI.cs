@@ -28,6 +28,10 @@ public class GuardAI : MonoBehaviour
     private bool capturing = false;
     private string kindToCapture = "";
 
+    public float startTime;
+    private bool changed = false;
+    [SerializeField] private GameObject knockedParticles;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +42,7 @@ public class GuardAI : MonoBehaviour
         patrolPoints = GameObject.FindGameObjectsWithTag("Patrol");
         celPoints = GameObject.FindGameObjectsWithTag("Capture");
         prevPos = transform.position;
+        startTime = -3f;
     }
 
     // Update is called once per frame
@@ -69,6 +74,19 @@ public class GuardAI : MonoBehaviour
         {
             choosePatrolPoint();
         }
+
+        // Stone
+        if (Time.time-startTime < 3) {
+            knockedParticles.SetActive(true);
+            transform.position = new Vector3(prevPos.x, prevPos.y, 0);
+            State = "None";
+            changed = false;
+        } else if (!changed) {
+            changed = true;
+            State = "Patrolling";
+            knockedParticles.SetActive(false);
+        }
+
     }
 
     private void setState()
