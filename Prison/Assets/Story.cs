@@ -55,6 +55,7 @@ public class Story : MonoBehaviour
 
                 audioSource.SetActive(false);
                 playButtonPressed = false;
+                counter = 0f;
             }
         }
     }
