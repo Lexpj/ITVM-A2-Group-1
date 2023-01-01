@@ -1,26 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class endSceneController : MonoBehaviour
 {
     private string endtext;
-    private Label label;
+    [SerializeField] private TextMeshProUGUI wintext;
 
     // Start is called before the first frame update
     void Start()
     {
         endtext = StateNameController.endGameText;
-        var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
-        label = rootVisualElement.Q<Label>("endtext0");
-        label.text = $"{endtext}";
+        wintext.text = $"{endtext}";
     }
 
-
-    private void GoBack()
+    public void GoBack()
     {
-        SceneManager.LoadScene("PrisonScene");
+        SceneManager.LoadScene("MainScene 1");
     }
 }
